@@ -10,7 +10,7 @@ Interests: _Human-Computer Interaction, Human-AI interaction, Human-Centered Com
 _2025–2026, Rochester, NY_  
 
 
-**B.S., Computer Science & Engineering — North South University (GPA 3.91)**  
+**B.S., Computer Science & Engineering — North South University**  
 _2020–2024, Dhaka, Bangladesh_  
 
 ---
