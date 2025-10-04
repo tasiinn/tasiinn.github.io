@@ -1,9 +1,7 @@
----
-![Profile picture](/assets/profile.jpg){: style="width:200px; border-radius:8px;" }
 
----
 
 # Tasin Khan
+<img src="/assets/profile.jpg" alt="Tasin Khan" width="150" style="border-radius:8px; float:left; margin-right:15px;">
 I am a first-year Master's student at the University of Rochester. I am currently working with Professor Yukang Yan at the Bear Lab. My research focuses on **human-centered AI systems** that help improve accessibility.  
 Interests: _Human-Computer Interaction, Human-AI interaction, Human-Centered Computing, Accessibility & Inclusion_
 
