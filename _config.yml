@@ -1,16 +1,14 @@
-
+title: "Tasin Khan"
 theme: jekyll-theme-minimal
 
-# Optional profile bits for the minimal theme
-
+logo: /assets/profile.JPG   # optional, shows a logo/picture in sidebar if theme supports it
 show_downloads: false
 
-# Useful links for the header/footer (the minimal theme shows these nicely)
 github:
   is_project_page: false
-  owner_url: "https://github.com/tasiinn"
 
 social_links:
   - { platform: github,   user_url: "https://github.com/tasiinn" }
   - { platform: linkedin, user_url: "https://www.linkedin.com/in/tasinkhan" }
   - { platform: email,    user_url: "mailto:tasinkhan2000@gmail.com" }
+
