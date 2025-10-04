@@ -15,7 +15,7 @@ hr{border:none;border-top:1px solid #e5e7eb;margin:20px 0}
 
   <!-- LEFT COLUMN -->
   <div class="left">
-    <img src="/assets/profile.JPG" alt="Tasin Khan" width="220">
+    <img src="/assets/profile.jpg" alt="Tasin Khan" width="220">
     <div class="contacts">
       <a href="mailto:tasinkhan2000@gmail.com">📧 Email</a>
       <a href="https://github.com/tasiinn" target="_blank">💻 GitHub</a>
