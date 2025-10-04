@@ -1,6 +1,6 @@
 ---
-# Front matter tells Jekyll to render this page using the theme
-title: "Tasin Khan"
+![Profile picture](/assets/profile.jpg){: style="width:200px; border-radius:8px;" }
+
 ---
 
 # Tasin Khan
