@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tasin Khan </title>
+  <meta name="description" content="Tasin Khan. Research interests in human‑centered AI, interaction design, and applied machine learning." />
+  <meta name="theme-color" content="#0ea5e9">
+  <style>
+    :root {
+      --bg: #0b0c0f;
+      --panel: #111319;
+      --text: #e6e8ee;
+      --muted: #a7b0c0;
+      --accent: #0ea5e9; /* cyan-500 */
+      --accent-2: #22d3ee; /* cyan-400 */
+      --chip: #1c1f29;
+      --link: #93c5fd;
+      --shadow: 0 10px 30px rgba(0,0,0,0.25);
+    }
+    html.light { --bg: #f7f8fb; --panel:#ffffff; --text:#0f172a; --muted:#465268; --chip:#eef2ff; --link:#1d4ed8; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; background: var(--bg); color: var(--text); line-height:1.6; }
+    a { color: var(--link); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 28px 20px 80px; }
+    header { display:grid; grid-template-columns: 1fr; gap: 22px; align-items:center; padding: 18px 0 12px; position: sticky; top:0; backdrop-filter: blur(8px); background: color-mix(in oklab, var(--bg) 85%, transparent); z-index:10; }
+    nav { display:flex; align-items:center; justify-content:space-between; }
+    .nav-links { display:flex; gap: 16px; flex-wrap: wrap; }
+    .pill { padding: 9px 14px; border-radius: 999px; background: var(--chip); color: var(--text); border: 1px solid color-mix(in oklab, var(--chip), #000 12%); }
+    .pill:hover{ filter: brightness(1.1); text-decoration:none; }
+    .toggle { cursor:pointer; border:none; background:var(--chip); color:var(--text); padding:10px 12px; border-radius:10px; box-shadow: var(--shadow); }
+
+    .hero { display:grid; grid-template-columns: 1fr; gap: 26px; margin-top: 14px; }
+    .card { background: var(--panel); border:1px solid color-mix(in oklab, var(--panel), #fff 6%); border-radius: 16px; padding: 22px; box-shadow: var(--shadow); }
+    .hero-grid { display:grid; grid-template-columns: 1.2fr .7fr; gap: 22px; }
+    .title { font-size: clamp(28px, 3vw, 44px); line-height:1.15; letter-spacing:.2px; margin:0 0 6px; }
+    .subtitle { color: var(--muted); margin:0 0 14px; }
+    .chips { display:flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
+    .avatar { width: 160px; height: 160px; border-radius: 16px; object-fit: cover; background: #0f172a; border:1px solid color-mix(in oklab, var(--panel), #fff 8%); }
+    .hero-cta { display:flex; gap: 10px; flex-wrap: wrap; margin-top: 12px; }
+
+    .section { margin-top: 30px; }
+    .section h2 { margin:0 0 12px; font-size: clamp(20px, 2.2vw, 28px); }
+    .grid-2 { display:grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+    .timeline { display:grid; gap: 14px; }
+    .item { padding: 16px; border-radius: 14px; background: var(--panel); border:1px solid color-mix(in oklab, var(--panel), #fff 6%); }
+    .item h3 { margin:0 0 6px; font-size: 18px; }
+    .item .meta { color: var(--muted); font-size: 14px; }
+    .bullet { margin: 8px 0; }
+
+    .project { display:grid; gap:8px; }
+    .project-title { font-weight: 700; }
+
+    footer { margin-top: 44px; padding-top: 18px; border-top:1px dashed color-mix(in oklab, var(--panel), #fff 18%); color: var(--muted); }
+
+    @media (max-width: 900px){ .hero-grid{ grid-template-columns: 1fr; } .grid-2{ grid-template-columns: 1fr; } .avatar{ width: 120px; height: 120px; } }
+  </style>
+  <script>
+    // Theme toggle
+    const setTheme = (t) => { document.documentElement.classList.toggle('light', t === 'light'); localStorage.setItem('theme', t); };
+    const initTheme = () => { const saved = localStorage.getItem('theme'); if(saved){ setTheme(saved); } };
+    document.addEventListener('DOMContentLoaded', initTheme);
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Tasin Khan",
+    "email": "mailto:tasinkhan2000@gmail.com",
+    "url": "https://tasiinn.github.io/",
+    "sameAs": [
+      "https://www.linkedin.com/in/tasinkhan",
+      "https://github.com/tasiinn"
+    ],
+    "knowsAbout": ["Human-Computer Interaction","Human-centered AI","Machine Learning","Deep Learning","A/B testing","Data Visualization"]
+  }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <nav>
+        <div style="display:flex; gap:10px; align-items:center;">
+          <a class="pill" href="#about">About</a>
+          <a class="pill" href="#interests">Research</a>
+          <a class="pill" href="#experience">Experience</a>
+          <a class="pill" href="#education">Education</a>
+          <a class="pill" href="#projects">Projects</a>
+          <a class="pill" href="#contact">Contact</a>
+        </div>
+        <div style="display:flex; gap:8px; align-items:center;">
+          <button class="toggle" aria-label="Toggle theme" onclick="setTheme(document.documentElement.classList.contains('light') ? 'dark' : 'light')">🌓</button>
+          <a class="pill" href="mailto:tasinkhan2000@gmail.com">Email</a>
+          <a class="pill" href="https://github.com/tasiinn" target="_blank" rel="noopener">GitHub</a>
+          <a class="pill" href="https://www.linkedin.com/in/tasinkhan" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-grid">
+        <div class="card">
+          <h1 class="title">Tasin Khan</h1>
+          <p class="subtitle">HCI × AI — I design and build <strong>human‑centered AI systems</strong> that are transparent, safe, and useful. My work spans <strong>interaction design</strong>, <strong>applied machine learning</strong>, and <strong>data‑driven evaluation</strong>.</p>
+          <div class="chips">
+            <span class="pill">Human‑Centered AI</span>
+            <span class="pill">LLMs & Evaluation</span>
+            <span class="pill">A/B Testing</span>
+            <span class="pill">Accessible UX</span>
+            <span class="pill">Data Visualization</span>
+          </div>
+          <div class="hero-cta">
+            <a class="pill" href="#projects">See projects ↓</a>
+            <a class="pill" href="#interests">Research interests</a>
+          </div>
+        </div>
+        <div class="card" style="display:flex; gap:16px; align-items:center; justify-content:flex-start;">
+          <img class="avatar" alt="Profile placeholder" src="https://avatars.githubusercontent.com/u/9919?s=200&v=4" />
+          <div>
+            <div style="font-weight:700">Currently</div>
+            <div class="bullet">M.S. in Computer Science @ University of Rochester (2025–2026)</div>
+            <div class="bullet">Research Assistant (HCI) — previously @ North South Univ. HCI Lab</div>
+            <div class="bullet">ML/AI Engineer — previously @ Blucheez</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT / INTERESTS -->
+    <section id="interests" class="section">
+      <h2>Research & Design Interests</h2>
+      <div class="card">
+        <p>I explore how people <em>understand, trust, and control</em> intelligent systems. I’m especially interested in:</p>
+        <div class="chips">
+          <span class="pill">Human‑AI Interaction</span>
+          <span class="pill">Explainable & Responsible AI</span>
+          <span class="pill">AI for Social Good</span>
+          <span class="pill">Behavioral Experimentation</span>
+          <span class="pill">Multimodal Interfaces</span>
+          <span class="pill">Conversational UX</span>
+          <span class="pill">Preference Modeling</span>
+          <span class="pill">Accessibility & Inclusion</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE & EDUCATION -->
+    <section id="experience" class="section">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <div class="item">
+          <h3>Blucheez — ML/AI Engineer</h3>
+          <div class="meta">Jan 2025 – Jul 2025 · churn modeling, ETL, experimentation</div>
+          <ul>
+            <li class="bullet">Developed models (Logistic Regression, XGBoost, Random Forests) on 500K+ records to predict churn; improved recall by 12%.</li>
+            <li class="bullet">Built Python + SQL ETL pipelines reducing data prep time by 40%.</li>
+            <li class="bullet">Designed A/B tests with causal inference; improved campaign ROI by 10%.</li>
+            <li class="bullet">Visualized insights in Tableau/Power BI to guide strategy.</li>
+          </ul>
+        </div>
+        <div class="item">
+          <h3>North South University — Human‑Computer Interaction Lab, Research Assistant</h3>
+          <div class="meta">Dec 2023 – Jul 2025 · data pipelines, mixed‑methods, visualization</div>
+          <ul>
+            <li class="bullet">Automated data processing for 50+ participants using Python & ATLAS.ti, cutting preprocessing time by 30%.</li>
+            <li class="bullet">Applied statistical analysis and visualization supporting publications and grants.</li>
+            <li class="bullet">Authored IRB protocols and proposals; streamlined collaboration with dashboards (−25% review time).</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section">
+      <h2>Education</h2>
+      <div class="grid-2">
+        <div class="item">
+          <h3>University of Rochester — M.S. Computer Science</h3>
+          <div class="meta">Aug 2025 – Dec 2026 · Rochester, NY</div>
+          <div>Relevant: Deep Learning, Computational Statistics, Human‑Computer Interaction.</div>
+        </div>
+        <div class="item">
+          <h3>North South University — B.S. Computer Science & Engineering (GPA 3.91)</h3>
+          <div class="meta">Oct 2020 – Dec 2024 · Dhaka, Bangladesh</div>
+          <div>Relevant: Machine Learning, Deep Learning, DSA, Software Dev, DB Systems, Discrete Math, Linear Algebra.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <h2>Selected Projects</h2>
+      <div class="grid-2">
+        <div class="item project">
+          <div class="project-title">Regulated Smart Device for Children</div>
+          <div class="meta">User research → prototype → ML content filtering</div>
+          <ul>
+            <li class="bullet">Led research with 65+ parents to define safety & usability requirements.</li>
+            <li class="bullet">Implemented ML‑driven content filtering and time‑restriction logic for healthy screen time.</li>
+          </ul>
+          <div class="chips">
+            <span class="pill">HCI</span><span class="pill">Prototyping</span><span class="pill">Safety</span>
+          </div>
+        </div>
+        <div class="item project">
+          <div class="project-title">Mental Health of People with Disabilities in Bangladesh (Mixed‑Methods)</div>
+          <div class="meta">Focus groups, ATLAS.ti, survey analytics</div>
+          <ul>
+            <li class="bullet">Ran a multi‑stakeholder study (30+ participants, 10+ experts) to identify accessibility barriers.</li>
+            <li class="bullet">Built a prototype app that personalizes resources based on qualitative & quantitative signals.</li>
+          </ul>
+          <div class="chips">
+            <span class="pill">AI for Social Good</span><span class="pill">Accessibility</span><span class="pill">Mixed‑Methods</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section">
+      <h2>Technical Skills</h2>
+      <div class="card">
+        <div class="chips">
+          <span class="pill">Python (Pandas, NumPy)</span>
+          <span class="pill">PyTorch</span>
+          <span class="pill">scikit‑learn</span>
+          <span class="pill">SQL</span>
+          <span class="pill">R</span>
+          <span class="pill">Java</span>
+          <span class="pill">C/C++</span>
+          <span class="pill">ETL Pipelines</span>
+          <span class="pill">Statistical Modeling</span>
+          <span class="pill">A/B Testing</span>
+          <span class="pill">Matplotlib</span>
+          <span class="pill">Tableau</span>
+          <span class="pill">Power BI</span>
+          <span class="pill">ATLAS.ti</span>
+          <span class="pill">GitHub</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <div class="card">
+        <div>Email: <a href="mailto:tasinkhan2000@gmail.com">tasinkhan2000@gmail.com</a></div>
+        <div>GitHub: <a href="https://github.com/tasiinn" target="_blank" rel="noopener">@tasiinn</a></div>
+        <div>LinkedIn: <a href="https://www.linkedin.com/in/tasinkhan" target="_blank" rel="noopener">/in/tasinkhan</a></div>
+      </div>
+    </section>
+
+    <footer>
+      <div>© <span id="year"></span> Tasin Khan. Built with semantic HTML + vanilla CSS/JS. Deployed via GitHub Pages.</div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
