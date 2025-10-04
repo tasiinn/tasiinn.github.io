@@ -4,7 +4,7 @@ description: "HCI × AI — human-centered AI, interaction design, and applied m
 theme: jekyll-theme-minimal
 
 # Optional profile bits for the minimal theme
-logo: /assets/avatar.png   # (add later if you want)
+
 show_downloads: false
 
 # Useful links for the header/footer (the minimal theme shows these nicely)
