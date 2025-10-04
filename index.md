@@ -1,4 +1,3 @@
----
 
 # Tasin Khan
 I am a first-year Master's student at the University of Rochester. I am currently working with Professor Yukang Yan at the Bear Lab. My research focuses on **human-centered AI systems** that help improve accessibility.  
