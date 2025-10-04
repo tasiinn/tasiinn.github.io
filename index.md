@@ -1,5 +1,5 @@
 
-I am a first-year Master's student at the University of Rochester. I am currently working with Professor Yukang Yan at the Bear Lab. My research focuses on **human-centered AI systems** that help improve accessibility.  
+I am a first-year Master's student at the University of Rochester. I am currently working with Professor Yukang Yan at the Bear Lab. My research focuses on human-centered AI systems that help improve accessibility.  
 Interests: _Human-Computer Interaction, Human-AI interaction, Human-Centered Computing, Accessibility & Inclusion_
 
 ---
@@ -21,7 +21,7 @@ _2020–2024, Dhaka, Bangladesh_
 ### BEAR Lab, University of Rochester — Research Assistant _(Current)_
 - Conducting HCI research at the intersection of accessibility and AI, focusing on inclusive design for blind and low-vision users in remote collaboration contexts.
 
-### Human-Computer Interaction Lab, North South University — Research Assistant _(Dec 2023 - Jul 2025)_
+### Design Inclusion and Access Lab (DIAL), North South University — Research Assistant _(Dec 2023 - Jul 2025)_
 - Conducted HCI research on accessibility for people with disabilities, applying mixed-methods studies to uncover usability barriers and inform inclusive technology design.
 
 
@@ -36,7 +36,7 @@ _2020–2024, Dhaka, Bangladesh_
 
 **Regulated Smart Device for Children**  
 - Led participatory design sessions with parents to understand concerns around children’s technology use. 
-- Prototyped an **ML-assisted content filtering** system that integrates safety, usability, and transparency features to promote healthier screen time. 
+- Prototyped an ML-assisted content filtering system that integrates safety, usability, and transparency features to promote healthier screen time. 
 - Highlighted design principles for balancing parental control with child autonomy.
 
 
