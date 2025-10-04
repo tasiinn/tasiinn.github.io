@@ -1,4 +1,5 @@
-title: "Tasin Khan"
+logo: ![Profile picture](/assets/profile.jpg){: style="width:200px; border-radius:8px;" }
+
 description: "HCI × AI — human-centered AI, interaction design, and applied machine learning"
 # Pick a simple built-in theme that GitHub Pages supports
 theme: jekyll-theme-minimal
