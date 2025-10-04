@@ -1,0 +1,26 @@
+<header class="site-header" role="banner">
+  <div class="wrapper" style="text-align:center;">
+    {% if site.logo %}
+      <a class="site-logo" href="{{ "/" | relative_url }}">
+        <img src="{{ site.logo | relative_url }}" alt="{{ site.title }}" style="max-width:180px;border-radius:10px;margin:14px auto 8px;display:block;">
+      </a>
+
+      <!-- Contacts directly under the photo -->
+      <div class="site-contacts" style="margin:6px 0 12px; line-height:1.7;">
+        {% assign gh = site.social_links | where: "platform","github"   | first %}
+        {% assign li = site.social_links | where: "platform","linkedin" | first %}
+        {% assign em = site.social_links | where: "platform","email"    | first %}
+
+        {% if em %}<a href="{{ em.user_url }}">📧 Email</a>{% endif %}
+        {% if gh %}<a href="{{ gh.user_url }}" target="_blank">💻 GitHub</a>{% endif %}
+        {% if li %}<a href="{{ li.user_url }}" target="_blank">🔗 LinkedIn</a>{% endif %}
+      </div>
+    {% endif %}
+
+    <!-- Keep the theme's title link (blue) and optional description -->
+    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+    {% if site.description %}
+      <p class="site-description">{{ site.description | escape }}</p>
+    {% endif %}
+  </div>
+</header>
