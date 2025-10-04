@@ -2,25 +2,32 @@
 title: "Tasin Khan"
 ---
 
-<!-- Two-column layout -->
-<div style="display:flex; gap:28px; align-items:flex-start; flex-wrap:wrap;">
+<style>
+.two-col{display:flex;gap:28px;align-items:flex-start;flex-wrap:wrap}
+.left{flex:0 0 220px;max-width:220px}
+.right{flex:1;min-width:280px}
+.left img{border-radius:10px;display:block;margin-bottom:16px}
+.contacts a{display:block;margin:4px 0}
+hr{border:none;border-top:1px solid #e5e7eb;margin:20px 0}
+</style>
+
+<div class="two-col">
 
   <!-- LEFT COLUMN -->
-  <div style="flex:0 0 220px; max-width:220px;">
-    <img src="/assets/profile.JPG" alt="Tasin Khan" width="220" style="border-radius:10px; display:block; margin-bottom:16px;">
-
-  <div style="font-size:15px; line-height:1.7;">
-    📧 <a href="mailto:tasinkhan2000@gmail.com">Email</a><br>
-    💻 <a href="https://github.com/tasiinn" target="_blank">GitHub</a><br>
-    🔗 <a href="https://www.linkedin.com/in/tasinkhan" target="_blank">LinkedIn</a>
+  <div class="left">
+    <img src="/assets/profile.JPG" alt="Tasin Khan" width="220">
+    <div class="contacts">
+      <a href="mailto:tasinkhan2000@gmail.com">📧 Email</a>
+      <a href="https://github.com/tasiinn" target="_blank">💻 GitHub</a>
+      <a href="https://www.linkedin.com/in/tasinkhan" target="_blank">🔗 LinkedIn</a>
+      <!-- Optional: <a href="/assets/Tasin_Khan_CV.pdf" target="_blank">📄 CV</a> -->
+    </div>
   </div>
-  </div>
 
-  <!-- RIGHT COLUMN (markdown enabled) -->
-  <div style="flex:1; min-width:280px;" markdown="1">
+  <!-- RIGHT COLUMN -->
+  <div class="right" markdown="1">
 
 # Tasin Khan
-
 I am a first-year Master's student at the University of Rochester. I am currently working with Professor Yukang Yan at the BEAR Lab. My research focuses on **human-centered AI systems** that help improve accessibility.  
 Interests: _Human-Computer Interaction, Human-AI Interaction, Human-Centered Computing, Accessibility & Inclusion_
 
@@ -49,14 +56,10 @@ _2020–2024, Dhaka, Bangladesh_
 ## Projects (Selected)
 
 **Mental Health of People with Disabilities in Bangladesh**  
-- Conducted a mixed-methods study combining focus groups, surveys, and expert input to identify accessibility barriers.  
-- Designed a resource platform concept informed by user needs, aiming to improve access to mental health support.  
-- Contributed to HCI insights on inclusive design and AI for social good.
+- Mixed-methods study identifying accessibility barriers; proposed inclusive design guidelines and resource tools.  
 
 **Regulated Smart Device for Children**  
-- Led participatory design sessions with parents to understand concerns around children’s technology use.  
-- Prototyped an **ML-assisted content filtering** system that integrates safety, usability, and transparency features to promote healthier screen time.  
-- Highlighted design principles for balancing parental control with child autonomy.
+- Participatory design with parents; prototyped an **ML-assisted content filtering** system emphasizing safety, usability, and transparency.  
 
 ---
 
@@ -69,3 +72,4 @@ _2020–2024, Dhaka, Bangladesh_
 
   </div>
 </div>
+
