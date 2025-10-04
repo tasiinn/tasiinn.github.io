@@ -27,7 +27,7 @@ _2020–2024, Dhaka, Bangladesh_
 
 ---
 
-## Projects (Selected)
+## Projects
 
 **Mental Health of People with Disabilities in Bangladesh**  
 - Conducted a mixed-methods study combining focus groups, surveys, and expert input to identify accessibility barriers.
