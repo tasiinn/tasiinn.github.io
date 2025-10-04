@@ -2,20 +2,36 @@
 title: "Tasin Khan"
 ---
 
+<!-- Hide the theme's blue site title + description -->
 <style>
-.two-col{display:flex;gap:28px;align-items:flex-start;flex-wrap:wrap}
-.left{flex:0 0 220px;max-width:220px}
-.right{flex:1;min-width:280px}
-.left img{border-radius:10px;display:block;margin-bottom:16px}
-.contacts a{display:block;margin:4px 0}
-hr{border:none;border-top:1px solid #e5e7eb;margin:20px 0}
+/* Minimal theme header override */
+header h1, header h1 a, header p { display: none !important; }
+
+/* Two-column layout */
+.two-col {
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr);
+  gap: 28px;
+  align-items: start;
+}
+@media (max-width: 720px) {
+  .two-col { grid-template-columns: 1fr; }
+}
+
+/* Left column bits */
+.left img { border-radius: 10px; display: block; margin-bottom: 16px; width: 220px; }
+.contacts a { display: block; margin: 4px 0; }
+
+/* Section divider */
+hr { border: none; border-top: 1px solid #e5e7eb; margin: 20px 0; }
 </style>
 
 <div class="two-col">
 
   <!-- LEFT COLUMN -->
   <div class="left">
-    <img src="/assets/profile.jpg" alt="Tasin Khan" width="220">
+    <!-- Make sure the filename + case matches exactly in /assets -->
+    <img src="/assets/profile.JPG" alt="Tasin Khan">
     <div class="contacts">
       <a href="mailto:tasinkhan2000@gmail.com">📧 Email</a>
       <a href="https://github.com/tasiinn" target="_blank">💻 GitHub</a>
@@ -27,7 +43,7 @@ hr{border:none;border-top:1px solid #e5e7eb;margin:20px 0}
   <!-- RIGHT COLUMN -->
   <div class="right" markdown="1">
 
-# Tasin Khan
+## Tasin Khan
 I am a first-year Master's student at the University of Rochester. I am currently working with Professor Yukang Yan at the BEAR Lab. My research focuses on **human-centered AI systems** that help improve accessibility.  
 Interests: _Human-Computer Interaction, Human-AI Interaction, Human-Centered Computing, Accessibility & Inclusion_
 
@@ -60,6 +76,7 @@ _2020–2024, Dhaka, Bangladesh_
 
 **Regulated Smart Device for Children**  
 - Participatory design with parents; prototyped an **ML-assisted content filtering** system emphasizing safety, usability, and transparency.  
+- Highlighted design principles for balancing parental control with child autonomy.
 
 ---
 
@@ -72,4 +89,5 @@ _2020–2024, Dhaka, Bangladesh_
 
   </div>
 </div>
+
 
